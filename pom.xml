@@ -9,13 +9,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>pomdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>pomdemo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<spring-cloud.version>2020.0.5</spring-cloud.version>
+		<spring-cloud.version>2021.0.5</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -54,15 +54,20 @@
 				<version>4.39.0</version>
 				<configuration>
 					<activeRecipes>
-						<recipe>com.azure.spring.migration.openrewrite.SpringCloud</recipe>
+						<recipe>com.azure.spring.migration.openrewrite.FileStorageApi</recipe>
 					</activeRecipes>
 				</configuration>
 				<dependencies>
 					<dependency>
 						<groupId>com.azure.spring.migration</groupId>
 						<artifactId>azure-spring-rewrite</artifactId>
-						<version>0.1.0</version>
+						<version>1.8.0-SNAPSHOT</version>
 					</dependency>
+					<dependency>
+            			<groupId>org.openrewrite.recipe</groupId>
+            			<artifactId>rewrite-spring</artifactId>
+           				<version>4.32.0</version>
+          			</dependency>
 				</dependencies>
 			</plugin>
 		</plugins>
