@@ -54,7 +54,7 @@
 				<version>4.39.0</version>
 				<configuration>
 					<activeRecipes>
-						<recipe>com.azure.spring.migration.openrewrite.FileStorageApi</recipe>
+						<recipe>com.azure.spring.migration.openrewrite.WindowFilePath</recipe>
 					</activeRecipes>
 				</configuration>
 				<dependencies>
