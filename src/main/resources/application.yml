@@ -1,0 +1,12 @@
+eureka:
+  instance:
+    instance-id:
+  client:
+    serviceUrl:
+
+spring:
+  cloud:
+    config:
+      tls:
+        keystore:
+  config:
